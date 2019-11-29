@@ -39,7 +39,7 @@
         self.server = [[HTTPServer alloc] init];
         [self.server setConnectionClass:[KTVHCHTTPConnection class]];
         [self.server setType:@"_http._tcp."];
-        [self.server setPort:0];
+        [self.server setPort:54321];
         self.backgroundTask = UIBackgroundTaskInvalid;
         [[NSNotificationCenter defaultCenter] addObserver:self
                                                  selector:@selector(applicationDidEnterBackground)
